@@ -4,7 +4,7 @@ metadata:
   name: nginx-service
   namespace: default
 spec:
-  type: NodePort  # Change to NodePort if not using a cloud provider
+  type: ClusterIP  # Change to NodePort if not using a cloud provider
   selector:
     app: nginx
   ports:
